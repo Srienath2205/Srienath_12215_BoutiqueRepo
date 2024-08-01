@@ -58,7 +58,7 @@ public class SeleniumBoutiqueTest {
 	  void testCase002UpdateBoutique() {
 	    driver.get("http://localhost:3000/viewboutique");
 	    driver.manage().window().setSize(new Dimension(1528, 816));
-	    driver.findElement(By.xpath("//table[@id=\'addemp\']/tbody/tr[5]/td[6]/a")).click();
+	    driver.findElement(By.xpath("//table[@id=\'addemp\']/tbody/tr[2]/td[6]/a")).click();
 	    driver.findElement(By.name("boutiqueName")).click();
 	    driver.findElement(By.name("boutiqueName")).clear();	    
 	    driver.findElement(By.name("boutiqueName")).sendKeys("Dandelion Land");

@@ -33,7 +33,7 @@ class ProductsServiceImplTest {
 	
 	@Test
 	void testDeleteProduct() {
-		assertEquals("Deleted", productsServiceImpl.deleteProduct(15));
+		assertEquals("Deleted", productsServiceImpl.deleteProduct(3));
 	}
 	
 	@Test
