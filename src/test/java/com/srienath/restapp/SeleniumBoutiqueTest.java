@@ -35,7 +35,7 @@ public class SeleniumBoutiqueTest {
 	    driver.get("http://localhost:3000/home");
 	    driver.manage().window().setSize(new Dimension(1528, 816));
 	    driver.findElement(By.linkText("Boutique")).click();
-	    driver.findElement(By.xpath("(//button[@id=\'homebutton\'])[2]")).click();
+	    driver.findElement(By.xpath("(//button[@id=\'homebutton\'])[5]")).click();
 	    driver.findElement(By.name("boutiqueName")).click();
 	    driver.findElement(By.name("boutiqueName")).sendKeys("BabyJean");
 	    driver.findElement(By.name("email")).click();

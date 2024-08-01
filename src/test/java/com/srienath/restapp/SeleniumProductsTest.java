@@ -36,7 +36,7 @@ public class SeleniumProductsTest {
 	    driver.get("http://localhost:3000/home");
 	    driver.manage().window().setSize(new Dimension(1528, 816));
 	    driver.findElement(By.id("basic-nav-dropdown")).click();
-	    driver.findElement(By.xpath("(//button[@id=\'homebutton\'])[2]")).click();
+	    driver.findElement(By.xpath("(//button[@id=\'homebutton\'])[5]")).click();
 	    driver.findElement(By.name("productName")).click();
 	    driver.findElement(By.name("productName")).sendKeys("Loui Philippe Brown Belt");
 	    driver.findElement(By.name("productType")).click();
@@ -63,7 +63,7 @@ public class SeleniumProductsTest {
 	  void testCase002UpdateProduct() {
 	    driver.get("http://localhost:3000/viewproducts");
 	    driver.manage().window().setSize(new Dimension(1528, 816));
-	    driver.findElement(By.cssSelector("tr:nth-child(1) .btn-success")).click();
+	    driver.findElement(By.cssSelector("tr:nth-child(3) .btn-success")).click();
 	    driver.findElement(By.name("productName")).click();
 	    driver.findElement(By.name("productName")).clear();
 	    driver.findElement(By.name("productName")).sendKeys("Gucci White Handbag");
@@ -94,7 +94,7 @@ public class SeleniumProductsTest {
 	  void testCase003DeleteProduct() {
 	    driver.get("http://localhost:3000/viewproducts");
 	    driver.manage().window().setSize(new Dimension(1528, 816));
-	    driver.findElement(By.xpath("//table[@id=\'addemp\']/tbody/tr[3]/td[7]/button")).click();
+	    driver.findElement(By.xpath("//table[@id=\'addemp\']/tbody/tr[4]/td[7]/button")).click();
 	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.alertIsPresent());
 	    Alert alert =driver.switchTo().alert();
